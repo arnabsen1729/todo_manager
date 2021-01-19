@@ -13,4 +13,9 @@ class UsersController < ApplicationController
     )
     render plain: "New User was created with id #{new_user.id}"
   end
+
+  def authenticate
+    is_user = (User.find_by(email: params[:email], password: params[:password]) != nil)
+    render plain: is_user
+  end
 end
