@@ -1,0 +1,133 @@
+body {
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 600px;
+  margin: 60px auto;
+  color: #453C52;
+}
+
+.TodoPage-title {
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #453C52;
+  margin-bottom: 12px;
+}
+
+.TodoSection {
+  margin-bottom: 20px;
+}
+
+.TodoSectionTitle {
+  display: flex;
+  color: #453C52;
+  margin-bottom: 8px;
+}
+
+.TodoSectionTitle-title {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+  color: #453C52;
+}
+
+.TodoSectionTitle-remainingCount {
+  font-size: 12px;
+  line-height: 17px;
+  margin-left: 8px;
+  color: #453C52;
+  margin-top: auto;
+}
+
+.TodoItem {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 3px;
+  color: #453C52;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  width: auto;
+  /* border: 1px solid red; */
+}
+
+.TodoItem-checkbox {
+  margin-top: 5px;
+  cursor: pointer;
+  width: 14px;
+}
+
+.TodoItem:hover {
+  background-color: #F1EDF7;
+  border-radius: 4px;
+}
+
+.TodoItem-overdue {
+  font-size: 12px;
+  color: #C53030;
+  letter-spacing: 0.09px;
+  margin-left: 10px;
+}
+
+.TodoItem-delete {
+  cursor: pointer;
+  display: none;
+}
+
+.TodoItem-date {
+  margin-left: 10px;
+  font-family: OpenSans;
+  font-size: 12px;
+  color: #726A7E;
+  letter-spacing: 0.09px;
+}
+
+.TodoItem:hover>.TodoItem-delete {
+  display: block;
+}
+
+.TodoItem-delete img {
+  margin-left: 10px;
+  margin-top: 2px;
+  width: 14px;
+}
+
+.AddTodo {
+  display: flex;
+  height: 32px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.AddTodo-text {
+  background: #FFFFFF;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #453C52;
+  margin-right: 10px;
+}
+
+.AddTodo-date {
+  padding: 5px 10px;
+  background: #FFFFFF;
+  border: 1px solid #BFB8CC;
+  border-radius: 4px;
+  color: #453C52;
+  margin-right: 10px;
+}
+
+.AddTodo-btn {
+  font-size: 14px;
+  font-weight: 600px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  background: #48BB78;
+  border-radius: 4px;
+  padding: 7px 22px;
+  margin-right: 10px;
+}

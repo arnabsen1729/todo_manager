@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Todo Manager</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="todo-app.css">
+</head>
+
+<body>
+  <h1 class="TodoPage-title">My Todo List</h1>
+  <section class="AddTodo">
+    <input class="AddTodo-text" type="text" placeholder="What's next?">
+    <input class="AddTodo-date" type="date">
+    <input class="AddTodo-btn" type="button" value="Add">
+  </section>
+  <article>
+    <section class="TodoSection">
+      <div class="TodoSectionTitle">
+        <h2 class="TodoSectionTitle-title">Due Today</h2>
+        <p class="TodoSectionTitle-remainingCount">0/3</p>
+      </div>
+      <ul>
+        <li class="TodoItem">
+          <input class="TodoItem-checkbox" type="checkbox">
+          Submit SaaS 201 project
+          <p class="TodoItem-overdue">Overdue</p>
+          <a class="TodoItem-delete">
+            <img src="delete.svg">
+          </a>
+        </li>
+        <li class="TodoItem">
+          <input class="TodoItem-checkbox" type="checkbox">
+          Call accountant
+          <a class="TodoItem-delete">
+            <img src="delete.svg">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="TodoSection">
+      <div class="TodoSectionTitle">
+        <h2 class="TodoSectionTitle-title">Due Tomorrow</h2>
+        <p class="TodoSectionTitle-remainingCount">0/3</p>
+      </div>
+      <ul>
+        <li class="TodoItem">
+          <input class="TodoItem-checkbox" type="checkbox">
+          Submit SaaS 201 project
+          <a class="TodoItem-delete">
+            <img src="delete.svg">
+          </a>
+        </li>
+        <li class="TodoItem">
+          <input class="TodoItem-checkbox" type="checkbox">
+          Call accountant
+          <a class="TodoItem-delete">
+            <img src="delete.svg">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="TodoSection">
+      <div class="TodoSectionTitle">
+        <h2 class="TodoSectionTitle-title">Remaining</h2>
+        <p class="TodoSectionTitle-remainingCount">0/3</p>
+      </div>
+      <ul>
+        <li class="TodoItem">
+          <input class="TodoItem-checkbox" type="checkbox">
+          Submit SaaS 201 project
+          <p class="TodoItem-date">Jan 22</p>
+          <a class="TodoItem-delete">
+            <img src="delete.svg">
+          </a>
+        </li>
+        <li class="TodoItem">
+          <input class="TodoItem-checkbox" type="checkbox">
+          Call accountant
+          <p class="TodoItem-date">Jan 22</p>
+          <a class="TodoItem-delete">
+            <img src="delete.svg">
+          </a>
+        </li>
+      </ul>
+    </section>
+  </article>
+</body>
+
+</html>
