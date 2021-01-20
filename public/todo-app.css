@@ -78,7 +78,6 @@ body {
 
 .TodoItem-date {
   margin-left: 10px;
-  font-family: OpenSans;
   font-size: 12px;
   color: #726A7E;
   letter-spacing: 0.09px;
@@ -111,6 +110,11 @@ body {
   margin-right: 10px;
 }
 
+.AddTodo-text:focus {
+  border: 1px solid #67597a;
+  outline: none;
+}
+
 .AddTodo-date {
   padding: 5px 10px;
   background: #FFFFFF;
@@ -118,6 +122,11 @@ body {
   border-radius: 4px;
   color: #453C52;
   margin-right: 10px;
+}
+
+.AddTodo-date:focus {
+  border: 1px solid #67597a;
+  outline: none;
 }
 
 .AddTodo-btn {
@@ -130,4 +139,8 @@ body {
   border-radius: 4px;
   padding: 7px 22px;
   margin-right: 10px;
+}
+
+.AddTodo-btn:active {
+  background: #38945e;
 }
