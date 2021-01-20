@@ -84,7 +84,7 @@ body {
   display: block;
 }
 
-.TodoItem-delete img {
+.TodoItem-delete-img {
   margin-left: 10px;
   margin-top: 2px;
   width: 14px;

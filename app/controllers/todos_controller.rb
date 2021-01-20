@@ -28,4 +28,10 @@ class TodosController < ApplicationController
     Todo.update(id, completed: completed)
     redirect_to todos_path
   end
+
+  def destroy
+    id = params[:id]
+    Todo.destroy(id)
+    redirect_to todos_path
+  end
 end
