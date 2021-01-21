@@ -21,6 +21,10 @@
         </div>
       <% end %>
     </section>
+
+    <% if flash[:error] %>
+      <p class="Flash-error"><%= flash[:error] %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>

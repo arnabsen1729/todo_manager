@@ -29,3 +29,9 @@
   text-decoration: none;
   font-size: 16px;
 }
+
+.Flash-error {
+  margin-bottom: 20px;
+  color: red;
+  font-size: 16px;
+}

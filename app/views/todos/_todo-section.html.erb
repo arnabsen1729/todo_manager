@@ -15,7 +15,7 @@
         <% end %>
         <a class="TodoItem-delete">
           <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
-            <%= image_submit_tag("delete.svg", class: "TodoItem-delete-img") %>
+            <%= image_submit_tag("icons/delete.svg", class: "TodoItem-delete-img") %>
           <% end %>
         </a>
       </li>
