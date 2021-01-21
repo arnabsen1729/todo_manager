@@ -6,11 +6,21 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag "application", media: "all", 'data-turbolinks-track': "reload" %>
+    <%= javascript_pack_tag "application", 'data-turbolinks-track': "reload" %>
   </head>
 
   <body>
+    <section class="AppHeader">
+      <a class="AppHeader-title" href="/"> The Todo Manager </a>
+      <% if @current_user %>
+        <div class="UserInfo">
+          <%= @current_user.first_name %> <%= @current_user.last_name %>
+
+          <%= link_to "Sign-Out", destroy_sessions_path, method: "delete", class: "pageLinks" %>
+        </div>
+      <% end %>
+    </section>
     <%= yield %>
   </body>
 </html>

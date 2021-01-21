@@ -2,6 +2,7 @@ class TodosController < ApplicationController
   # skip_before_action :verify_authenticity_token
 
   def index
+    @todos = @current_user.todos
     # render plain: Todo.order(:due_date).map { |todo| todo.to_pleasant_string }.join("\n")
     render "index"
   end
@@ -18,6 +19,7 @@ class TodosController < ApplicationController
       todo_text: todo_text,
       due_date: due_date,
       completed: false,
+      user_id: current_user.id,
     )
     redirect_to todos_path
   end
@@ -25,13 +27,13 @@ class TodosController < ApplicationController
   def update
     id = params[:id]
     completed = params[:completed]
-    Todo.update(id, completed: completed)
+    @current_user.todos.update(id, completed: completed)
     redirect_to todos_path
   end
 
   def destroy
     id = params[:id]
-    Todo.destroy(id)
+    @current_user.todos.destroy(id)
     redirect_to todos_path
   end
 end

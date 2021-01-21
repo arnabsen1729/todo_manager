@@ -1,11 +1,6 @@
 class Todo < ActiveRecord::Base
   belongs_to :user
 
-  def to_pleasant_string
-    is_completed = completed ? "[X]" : "[ ]"
-    "#{id}. #{due_date.to_s(:long)} #{todo_text} #{is_completed}"
-  end
-
   def self.add_task(todo)
     create!(todo_text: todo[:todo_text], due_date: Date.today + todo[:due_in_days], completed: false)
   end
